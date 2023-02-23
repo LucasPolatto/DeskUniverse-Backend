@@ -5,11 +5,13 @@ public class Character
     //Identificação do Personagem
     public int Id { get; set; }
     public int UserId { get; set; }
+    public int? CampaignId { get; set; }
     public string Name { get; set; }
     public string? Race { get; set; }
     public string? Gender { get; set; }
     public string? Age { get; set; }
     public string? Class { get; set; }
+    public string? Description { get; set; }
     public string? History { get; set; }
 
 
