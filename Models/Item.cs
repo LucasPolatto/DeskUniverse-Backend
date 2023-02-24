@@ -1,6 +1,6 @@
 namespace DeskUniverse_Backend.Models;
 
-public class Inventory
+public class Item
 {
     public int Id { get; set; }
     public int characterId { get; set; }
