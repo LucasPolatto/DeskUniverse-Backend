@@ -73,6 +73,7 @@ public class CharacterController : ControllerBase
         _character.CON = update.CON;
         _character.INT = update.INT;
         _character.WIS = update.WIS;
+        _character.CHA = update.CHA;
         _character.WIL = update.WIL;
         _character.PD = update.PD;
         _character.MD = update.MD;

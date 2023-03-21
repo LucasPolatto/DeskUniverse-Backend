@@ -24,6 +24,7 @@ public class Character
     public int? CON { get; set; }
     public int? INT { get; set; }
     public int? WIS { get; set; }
+    public int? CHA { get; set; }
     public int? WIL { get; set; }
     public int? PD { get; set; }
     public int? MD { get; set; }
