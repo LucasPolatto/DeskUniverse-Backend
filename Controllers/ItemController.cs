@@ -53,8 +53,6 @@ public class ItemController : ControllerBase
             return NotFound();
 
         _item.Name = update.Name;
-        _item.Size = update.Size;
-        _item.Type = update.Type;
         _item.Description = update.Description;
 
         db.SaveChanges();
