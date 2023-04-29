@@ -11,5 +11,7 @@ public class DeskUniDB : DbContext
     public DbSet<Skill> Skills { get; set; }
     public DbSet<Item> Itens { get; set; }
     public DbSet<Campaign> Campaigns { get; set; }
-    
+    public DbSet<Image> Images { get; set; }
+    public DbSet<Token> Tokens { get; set; }
+    public DbSet<Board> Boards { get; set; }
 }
