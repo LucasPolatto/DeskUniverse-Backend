@@ -53,6 +53,7 @@ public class TokenController : ControllerBase
             return NotFound();
 
         _token.ImageURL = update.ImageURL;
+        _token.Position = update.Position;
         _token.Health = update.Health;
         _token.Mana = update.Mana;
 

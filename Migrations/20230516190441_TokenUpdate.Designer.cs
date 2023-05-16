@@ -4,6 +4,7 @@ using DeskUniverse_Backend.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DeskUniverse_Backend.Migrations
 {
     [DbContext(typeof(DeskUniDB))]
-    partial class DeskUniDBModelSnapshot : ModelSnapshot
+    [Migration("20230516190441_TokenUpdate")]
+    partial class TokenUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -236,9 +239,6 @@ namespace DeskUniverse_Backend.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CampaignId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CharacterId")
                         .HasColumnType("int");
 
                     b.Property<int?>("Health")
