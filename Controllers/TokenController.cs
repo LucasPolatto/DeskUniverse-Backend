@@ -51,7 +51,8 @@ public class TokenController : ControllerBase
         Token? _token = db.Tokens.Find(id);
         if(_token == null)
             return NotFound();
-
+            
+        _token.CampaignId = update.CampaignId;
         _token.ImageURL = update.ImageURL;
         _token.Position = update.Position;
         _token.Health = update.Health;
